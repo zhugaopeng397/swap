@@ -1,0 +1,24 @@
+{
+  "name": "CoinGecko",
+  "logoURI": "https://www.coingecko.com/assets/thumbnail-007177f3eca19695592f0b8b0eabbdae282b54154e1be912285c9034ea6cbaf2.png",
+  "keywords": ["defi"],
+  "timestamp": "2022-11-02T12:10:23.291+00:00",
+  "tokens": [
+    {
+      "chainId": 5,
+      "address": "0xb4fbf271143f4fbf7b91a5ded31805e42b2208d6",
+      "name": "WETH",
+      "symbol": "WETH",
+      "decimals": 18,
+      "logoURI": "https://explorer.bitquery.io/packs/media/icon/etc-fc7839d1.svg"
+    },
+    {
+      "chainId": 5,
+      "address": "0x07865c6e87b9f70255377e024ace6630c1eaa37f",
+      "name": "USDC",
+      "symbol": "USDC",
+      "decimals": 18,
+      "logoURI": "https://explorer.bitquery.io/packs/media/icon/bnb-9db5aa6c.svg"
+    }
+  ]
+}

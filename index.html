@@ -17,6 +17,10 @@
         <a class="navbar-brand" href="#">My DEX Aggregator</a>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
+            <select id="network_selection" class="btn btn-outline-primary my-2 my-sm-0" >
+              <option id="mainnet">Mainnet</option>
+              <option id="goerli">Goerli</option>
+            </select>
             <button id="login_button" class="btn btn-outline-primary my-2 my-sm-0" type="submit">Sign in with MetaMask</button>
           </li>
       </nav>
@@ -28,7 +32,7 @@
                     <div class="swapbox">
                         <div class="swapbox_select token_select" id="from_token_select">
                             <img  class="token_img"  id="from_token_img">
-                            <span  id="from_token_text"></span>
+                            <span id="from_token_text"></span>
                         </div>
                         <div class="swapbox_select">
                             <input class="number form-control" placeholder="amount" id="from_amount">
@@ -37,13 +41,15 @@
                     <div class="swapbox">
                         <div class="swapbox_select token_select" id="to_token_select">
                             <img  class="token_img"  id="to_token_img">
-                            <span  id="to_token_text"></span>
+                            <span id="to_token_text"></span>
                         </div>
                          <div class="swapbox_select">
                             <input class="number form-control" placeholder="amount" id="to_amount">
                         </div>
                     </div>  
                     <div class="gas_estimate_label">Estimated Gas: <span id="gas_estimate"></span></div>
+                    <div class="gas_estimate_label">Estimated USD: <span id="gas_usd"></span></div>
+                    <div class="gas_estimate_label">The best price comes from: <span id="price_source"></span></div>
                     <button disabled class="btn btn-large btn-primary btn-block" id="swap_button">Swap</button>                
                 </div>
             </div>
@@ -58,6 +64,9 @@
             <button id="modal_close" type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
+          </div>
+          <div class="modal-filter">
+            <input class="form-control" placeholder="coin name" id="coin_filter">
           </div>
           <div class="modal-body">
             <!-- Replace the modal text with token_list -->
